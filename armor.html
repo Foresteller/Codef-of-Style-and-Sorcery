@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ru" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Доспехи — Codex of Steel & Ash</title>
+
+    <meta
+      name="description"
+      content="Сравнение исторических европейских доспехов и защитного снаряжения Dark Souls 3."
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/variables.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a href="index.html" class="header__logo">
+          <span aria-hidden="true">⚔️</span>
+          Codex of Steel & Ash
+        </a>
+
+        <nav aria-label="Основная навигация">
+          <ul class="header__menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="history.html">История</a></li>
+            <li><a href="weapons.html">Оружейная</a></li>
+            <li>
+              <a href="armor.html" class="active" aria-current="page"
+                >Доспехи</a
+              >
+            </li>
+            <li><a href="spells.html">Гримуар</a></li>
+          </ul>
+        </nav>
+
+        <button id="themeToggle" type="button" aria-label="Переключить тему">
+          🌙
+        </button>
+      </div>
+
+      <div class="filter-bar">
+        <div class="container">
+          <span>Сеттинг:</span>
+
+          <button
+            class="filter-btn active"
+            type="button"
+            data-setting="all"
+            aria-pressed="true"
+          >
+            Все
+          </button>
+
+          <button
+            class="filter-btn"
+            type="button"
+            data-setting="history"
+            aria-pressed="false"
+          >
+            Реальная история
+          </button>
+
+          <button
+            class="filter-btn"
+            type="button"
+            data-setting="ds3"
+            aria-pressed="false"
+          >
+            Dark Souls 3
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <div class="container">
+          <h1>Доспехи и защитное снаряжение</h1>
+
+          <p>
+            Сравнение исторических европейских доспехов XIV–XV веков и защитного
+            снаряжения из Dark Souls 3.
+          </p>
+        </div>
+      </section>
+
+      <section class="catalog">
+        <div class="container">
+          <noscript>
+            <p>
+              Для загрузки каталога и работы фильтров необходимо включить
+              JavaScript.
+            </p>
+          </noscript>
+
+          <div
+            id="armorCatalog"
+            class="catalog-grid"
+            aria-live="polite"
+            aria-busy="true"
+          >
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 Codex of Steel & Ash</p>
+      </div>
+    </footer>
+  </body>
+</html>

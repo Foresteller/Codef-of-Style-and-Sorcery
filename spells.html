@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ru" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Гримуар — Codex of Steel & Ash</title>
+
+    <meta
+      name="description"
+      content="Исследование магических дисциплин Dark Souls 3 и исторических представлений об алхимии и магии."
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/variables.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a href="index.html" class="header__logo">
+          <span aria-hidden="true">⚔️</span>
+          Codex of Steel & Ash
+        </a>
+
+        <nav aria-label="Основная навигация">
+          <ul class="header__menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="history.html">История</a></li>
+            <li><a href="weapons.html">Оружейная</a></li>
+            <li><a href="armor.html">Доспехи</a></li>
+            <li>
+              <a href="spells.html" class="active" aria-current="page"
+                >Гримуар</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <button id="themeToggle" type="button" aria-label="Переключить тему">
+          🌙
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <div class="container">
+          <h1>Гримуар: магические дисциплины</h1>
+
+          <p>
+            Исторические представления об алхимии и магии в сравнении с
+            магическими системами Dark Souls 3.
+          </p>
+        </div>
+      </section>
+
+      <section class="spells-matrix">
+        <div class="container">
+          <h2>Сопоставление дисциплин</h2>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Категория</th>
+                  <th scope="col">Исторический контекст</th>
+                  <th scope="col">Dark Souls 3</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <th scope="row">Огненное воздействие</th>
+                  <td>
+                    <strong>Греческий огонь и зажигательные смеси</strong>
+                    <br />
+                    Исторические составы, применявшиеся для поражения противника
+                    огнём.
+                  </td>
+                  <td>
+                    <strong>Пиромантия</strong>
+                    <br />
+                    Магическая дисциплина, позволяющая управлять огнём.
+                    Например, Fire Orb и Chaos Storm.
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">Лечение</th>
+                  <td>
+                    <strong>Травничество и медицинские составы</strong>
+                    <br />
+                    Использование лекарственных растений, настоев и мазей для
+                    лечения различных заболеваний.
+                  </td>
+                  <td>
+                    <strong>Чудеса</strong>
+                    <br />
+                    Магия, основанная на вере. Например, Heal и Great Heal.
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">Защита</th>
+                  <td>
+                    <strong>Амулеты и обереги</strong>
+                    <br />
+                    Предметы, которым в исторических культурах приписывали
+                    защитные свойства.
+                  </td>
+                  <td>
+                    <strong>Защитные чудеса</strong>
+                    <br />
+                    Например, Tears of Denial — заклинание, позволяющее пережить
+                    смертельный урон с небольшим количеством здоровья.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="spells-arena">
+        <div class="container">
+          <h2>Симулятор заклинаний</h2>
+
+          <p>
+            Выберите заклинание Dark Souls 3 для запуска визуального эффекта.
+          </p>
+
+          <div id="spellsArena">
+            <div class="spell-controls">
+              <button type="button" data-spell="fire-orb">
+                🔥 Огненная сфера
+              </button>
+
+              <button type="button" data-spell="lightning-spear">
+                ⚡ Копьё молнии
+              </button>
+            </div>
+
+            <div id="spellViewport">
+              <div id="spellEffect" aria-live="polite">
+                Выберите заклинание для запуска эффекта.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 Codex of Steel & Ash</p>
+      </div>
+    </footer>
+  </body>
+</html>
