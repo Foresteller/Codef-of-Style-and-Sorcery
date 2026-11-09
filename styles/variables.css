@@ -1,0 +1,35 @@
+:root {
+  --bg-primary: #0f1115;
+  --bg-secondary: #181b20;
+  --bg-card: #1f232b;
+  --bg-hover: #2a2f3a;
+
+  --accent-gold: #c9a050;
+  --accent-ds3: #e65100;
+
+  --text-main: #e0e0dc;
+  --text-muted: #a09b91;
+  --text-inverse: #0f1115;
+
+  --font-heading: "Cormorant Garamond", serif;
+  --font-body: "Cormorant Garamond", serif;
+
+  --header-height: 76px;
+
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}
+
+[data-theme="light"] {
+  --bg-primary: #f2eee5;
+  --bg-secondary: #e6dfd1;
+  --bg-card: #faf7f0;
+  --bg-hover: #ddd3c1;
+
+  --accent-gold: #8b672b;
+  --accent-ds3: #b8440a;
+
+  --text-main: #29251f;
+  --text-muted: #71695d;
+  --text-inverse: #ffffff;
+}

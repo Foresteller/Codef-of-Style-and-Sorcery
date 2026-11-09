@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="ru" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>История — Codex of Steel & Ash</title>
+
+    <meta
+      name="description"
+      content="Исторические факты о средневековом вооружении, рыцарстве и алхимии в сравнении с Dark Souls 3."
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/variables.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a href="index.html" class="header__logo">
+          <span aria-hidden="true">⚔️</span>
+          Codex of Steel & Ash
+        </a>
+
+        <nav aria-label="Основная навигация">
+          <ul class="header__menu">
+            <li><a href="index.html">Главная</a></li>
+            <li>
+              <a href="history.html" class="active" aria-current="page">
+                История
+              </a>
+            </li>
+            <li><a href="weapons.html">Оружейная</a></li>
+            <li><a href="armor.html">Доспехи</a></li>
+            <li><a href="spells.html">Гримуар</a></li>
+          </ul>
+        </nav>
+
+        <button id="themeToggle" type="button" aria-label="Переключить тему">
+          🌙
+        </button>
+      </div>
+
+      <div class="filter-bar">
+        <div class="container">
+          <span>Сеттинг:</span>
+
+          <button
+            class="filter-btn active"
+            type="button"
+            data-setting="all"
+            aria-pressed="true"
+          >
+            Все
+          </button>
+
+          <button
+            class="filter-btn"
+            type="button"
+            data-setting="history"
+            aria-pressed="false"
+          >
+            Реальная история
+          </button>
+
+          <button
+            class="filter-btn"
+            type="button"
+            data-setting="ds3"
+            aria-pressed="false"
+          >
+            Dark Souls 3
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <div class="container">
+          <h1>Хроники и исторический контекст</h1>
+
+          <p>
+            Исследование военных традиций, рыцарской культуры и научных
+            представлений позднего Средневековья в сравнении с миром Dark Souls
+            3.
+          </p>
+        </div>
+      </section>
+
+      <section class="articles">
+        <div class="container">
+          <article class="history-article">
+            <div data-setting="history">
+              <header>
+                <span>Реальность (XV век)</span>
+
+                <h2>Турнирный этикет vs смертельный бой</h2>
+              </header>
+
+              <div>
+                <p>
+                  В популярной культуре рыцарский турнир часто изображается как
+                  кровавая бойня без правил. В действительности турниры XV века
+                  имели определённые правила и регламенты.
+                </p>
+
+                <p>
+                  Целью джостинга или пешего боя на поллэксах было
+                  продемонстрировать воинскую дисциплину и мастерство.
+                  Использовались специализированное оружие и усиленные турнирные
+                  доспехи, которые могли быть тяжелее боевых.
+                </p>
+              </div>
+            </div>
+
+            <aside data-setting="ds3">
+              <h3>Игровой контраст: Dark Souls 3</h3>
+
+              <p>
+                В Лотрике турнирная культура трансформирована в фатальный
+                ритуал. Рыцари Лотрика и другие противники сражаются без
+                соблюдения турнирного этикета. Их действия подчинены идее
+                выживания и защиты угасающего Огня.
+              </p>
+            </aside>
+          </article>
+
+          <article class="history-article" data-setting="history">
+            <header>
+              <span>Реальность (XV–XVII века)</span>
+
+              <h2>Охота на ведьм и алхимические трактаты</h2>
+            </header>
+
+            <div>
+              <p>
+                Вопреки распространённым стереотипам, пик охоты на ведьм
+                пришёлся не на раннее Средневековье, а на период позднего
+                Средневековья и раннего Нового времени, особенно XVI–XVII века.
+              </p>
+
+              <p>
+                В то же время алхимия развивалась как часть натурфилософии.
+                Алхимики исследовали свойства веществ, металлов и различные
+                способы их обработки.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="myths">
+        <div class="container">
+          <h2>Разбор мифов: физика и историография</h2>
+
+          <div class="myths-grid">
+            <article class="myth-card" data-setting="history">
+              <span class="badge">Миф #1</span>
+
+              <h3>Рыцаря в латах сбивали с ног, и он не мог подняться</h3>
+
+              <div>
+                <div class="statement false">
+                  <strong>Заблуждение:</strong>
+                  Латный доспех весил 50+ кг, превращая воина в неповоротливую
+                  статую.
+                </div>
+
+                <div class="statement true">
+                  <strong>Исторический факт:</strong>
+                  Полный боевой доспех XV века весил 20–25 кг. Вес распределялся
+                  по всему телу. Рыцари сохраняли достаточную подвижность для
+                  выполнения боевых действий.
+                </div>
+              </div>
+
+              <footer>
+                <span>
+                  В Dark Souls 3 перегрузка персонажа влияет на подвижность и
+                  перекаты.
+                </span>
+              </footer>
+            </article>
+
+            <article class="myth-card" data-setting="history">
+              <span class="badge">Миф #2</span>
+
+              <h3>Меч был основным оружием на поле боя</h3>
+
+              <div>
+                <div class="statement false">
+                  <strong>Заблуждение:</strong>
+                  Рыцарь входил в битву исключительно с мечом.
+                </div>
+
+                <div class="statement true">
+                  <strong>Исторический факт:</strong>
+                  Меч был одним из видов вооружения. В зависимости от периода и
+                  задач использовались копья, поллэксы, булавы и другие виды
+                  оружия.
+                </div>
+              </div>
+            </article>
+
+            <article class="myth-card" data-setting="history">
+              <span class="badge">Миф #3</span>
+
+              <h3>Двуручные мечи были гигантскими дубинами</h3>
+
+              <div>
+                <div class="statement false">
+                  <strong>Заблуждение:</strong>
+                  Цвейхендеры весили по 10–15 кг и требовали невероятной
+                  физической силы.
+                </div>
+
+                <div class="statement true">
+                  <strong>Исторический факт:</strong>
+                  Реальные двуручные мечи имели значительно меньший вес. Их
+                  применение требовало владения техникой фехтования и контроля
+                  дистанции.
+                </div>
+              </div>
+
+              <footer>
+                <span>
+                  В Dark Souls 3 Greatsword обладает значительно преувеличенными
+                  игровыми характеристиками.
+                </span>
+              </footer>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 Codex of Steel & Ash</p>
+      </div>
+    </footer>
+  </body>
+</html>
