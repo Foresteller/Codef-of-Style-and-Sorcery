@@ -10,8 +10,9 @@
 
     <meta
       name="description"
-      content="Исследование средневекового вооружения, доспехов и мира Dark Souls 3."
+      content="Исследование средневекового вооружения, доспехов реальной истории и мира Dark Souls 3."
     />
+    <script src="scripts/main.js" defer></script>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
@@ -25,10 +26,9 @@
 
   <body>
     <header class="header">
-      <div class="container header__container">
+      <div class="container">
         <a href="index.html" class="header__logo">
           <span aria-hidden="true">⚔️</span>
-
           Codex of Steel & Ash
         </a>
 
@@ -36,8 +36,8 @@
           <ul class="header__menu">
             <li>
               <a href="index.html" class="active" aria-current="page"
-                >Главная</a
-              >
+                >Главная
+              </a>
             </li>
 
             <li><a href="history.html">История</a></li>
@@ -55,7 +55,54 @@
         </button>
       </div>
     </header>
-
+    <main>
+      <section>
+        <p>Интерактивный веб-кодекс</p>
+        <h1>Сталь, Пепел и Древнее Колдовство</h1>
+          <p>
+              Погрузитесь в сопоставление исторического рыцарства XIV–XV веков
+              и мрачного мира Dark Souls 3. Изучите физику доспехов,
+              реальные характеристики оружия и представления о средневековой алхимии.
+          </p>
+      </section>
+      <section class="world-selection">
+        <h2>Выбор пути</h2>
+        <p>«Выберите мир, который хотите исследовать»</p>
+        <div class="cards">
+          <article>
+            <h3>Исторический зал</h3>
+            <img src="images/home/castle.jpg" alt="Замок Спишский град" />
+            <p>
+              «Реальная история средневекового вооружения, доспехов, военного
+              дела и представлений о магии».
+            </p>
+            <button type="button" class="btn" data-world="history">
+              Исследовать историю
+            </button>
+          </article>
+          <article>
+            <h3>Горнило пепла</h3>
+            <img src="images/home/Anor%20londo%20Castle.jpg" alt="Город Анор Лондо" />
+            <p>
+              «Мрачный мир Dark Souls 3. Легендарное оружие, тяжёлые доспехи,
+              магия и история угасающего мира»
+            </p>
+            <button type="button" class="btn" data-world="dark-souls">
+              Войти в горнило
+            </button>
+          </article>
+        </div>
+      </section>
+      <section>
+        <h2>Генератор цитат</h2>
+        <blockquote>
+          «Сталь не обладает собственным мнением. Лишь рука, направляющая её,
+          судит поступки.»
+        </blockquote>
+        <cite>Жан де Семи, Рыцарский Трактат (1408 г.)</cite>
+        <button class="btn" id="nextQuote">Следующая цитата</button>
+      </section>
+    </main>
     <footer class="footer">
       <div class="container">
         <p>&copy; 2026 Codex of Steel & Ash</p>
